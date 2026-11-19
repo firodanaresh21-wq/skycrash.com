@@ -1,0 +1,13 @@
+{
+  "name": "skycrash-server",
+  "version": "2.0.0",
+  "description": "SkyCrash: the full game plus a real server. Shared rounds, server-side balances, crash-safe SQLite. Virtual coins only.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --no-warnings server.js",
+    "loadtest": "AUTH_RATE=100000 node --no-warnings loadtest.js 1000 60 http://localhost:8080",
+    "check": "node --no-warnings check-db.js"
+  },
+  "engines": { "node": ">=22.5.0" },
+  "license": "UNLICENSED"
+}
